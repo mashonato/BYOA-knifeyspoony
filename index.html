@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knifey Spoon-off</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="game-title">Knifey Spoon-off</h1>
+    <div class="game-container">
+        <div id="game-ui">
+            <div class="player-side">
+                <div class="stick-figure">🐕</div>
+                <div class="label">You</div>
+                <div id="player-gold" class="gold-container"></div>
+            </div>
+
+            <div class="middle-section">
+                <div id="middle-gold" class="gold-container"></div>
+                <div class="utensils-container">
+                    <div class="utensil">🔪</div>
+                </div>
+                <div class="controls">
+                    <div class="button-container">
+                        <button class="primary-button heads" onclick="playTurn('heads')">Knife</button>
+                        <button class="primary-button tails" onclick="playTurn('tails')">Spoon</button>
+                    </div>
+                </div>
+                <div id="message"></div>
+            </div>
+
+            <div class="enemy-side">
+                <div class="stick-figure">🐈</div>
+                <div class="label">Your worst enemy</div>
+                <div id="enemy-gold" class="gold-container"></div>
+            </div>
+        </div>
+        
+        <div id="end-screen" style="display: none;">
+            <div id="end-message" class="end-message"></div>
+            <button class="primary-button" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    <div class="game-instructions">
+        <h2>How to Play</h2>
+        <p>Pick knife or spoon. If you guess right, you steal a sack of cash. First to collect all three sacks wins!</p>
+    </div>
+    <div class="credit">Made by Mash</div>
+    <script src="script.js"></script>
+</body>
+</html> 

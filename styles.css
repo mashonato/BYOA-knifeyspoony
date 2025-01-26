@@ -1,0 +1,200 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafafa;
+    color: #1a1a1a;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-height: auto;
+}
+
+#game-ui {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.player-side, .enemy-side, .middle-section {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stick-figure {
+    font-size: 48px;
+}
+
+.label {
+    margin: 10px 0;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.gold-container {
+    min-height: 80px;
+    margin: 20px 0;
+    position: relative;
+    width: 200px;
+}
+
+.gold-piece {
+    display: inline-block;
+    font-size: 32px;
+    margin: 5px;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+}
+
+.gold-bar {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.coin {
+    display: none;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.primary-button {
+    min-width: 120px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #0066FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+    background-color: #0052cc;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: 600;
+    min-height: 20px;
+    color: #1a1a1a;
+}
+
+.coin.flip {
+    transform: rotateY(1800deg);
+}
+
+#play-again-container {
+    margin-top: 20px;
+}
+
+/* Style the buttons differently */
+.primary-button.heads {
+    background-color: #FFB800;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.primary-button.heads:hover {
+    background-color: #E6A600;
+}
+
+.primary-button.tails {
+    background-color: #0066FF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.primary-button.tails:hover {
+    background-color: #0052cc;
+}
+
+.game-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 40px 0 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.game-instructions {
+    text-align: center;
+    max-width: 600px;
+    margin: 30px auto;
+    color: #666;
+}
+
+.game-instructions h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.game-instructions p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.credit {
+    text-align: center;
+    color: #666;
+    margin: 30px auto;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Add these new styles */
+.utensils-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.utensil {
+    font-size: 72px;
+}
+
+#end-screen {
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.end-message {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    line-height: 1.3;
+    color: #1a1a1a;
+} 
