@@ -1,10 +1,10 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #fafafa;
+    background-color: #f5f5f7;
     color: #1a1a1a;
     line-height: 1.5;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .game-container {
@@ -12,13 +12,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 40px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 48px;
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    min-height: auto;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 #game-ui {
@@ -38,7 +37,9 @@ body {
 }
 
 .stick-figure {
-    font-size: 48px;
+    font-size: 64px;
+    margin: 10px 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .label {
@@ -56,11 +57,12 @@ body {
 
 .gold-piece {
     display: inline-block;
-    font-size: 32px;
+    font-size: 36px;
     margin: 5px;
     position: absolute;
     transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(-50%);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }
 
 .gold-bar {
@@ -83,27 +85,32 @@ body {
 }
 
 .primary-button {
-    min-width: 120px;
-    padding: 12px 24px;
+    min-width: 140px;
+    padding: 14px 28px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    background-color: #0066FF;
+    background-color: #007AFF;
     color: white;
     border: none;
-    border-radius: 8px;
-    transition: background-color 0.2s;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .primary-button:hover {
-    background-color: #0052cc;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 #message {
-    margin-top: 20px;
+    margin-top: 24px;
     font-weight: 600;
-    min-height: 20px;
+    font-size: 18px;
     color: #1a1a1a;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: #f5f5f7;
 }
 
 .coin.flip {
@@ -116,48 +123,46 @@ body {
 
 /* Style the buttons differently */
 .primary-button.heads {
-    background-color: #FFB800;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    background-color: #FF9500;
 }
 
 .primary-button.heads:hover {
-    background-color: #E6A600;
+    background-color: #F08700;
 }
 
 .primary-button.tails {
-    background-color: #0066FF;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    background-color: #007AFF;
 }
 
 .primary-button.tails:hover {
-    background-color: #0052cc;
+    background-color: #0066FF;
 }
 
 .game-title {
     text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    color: #1a1a1a;
+    font-size: 56px;
+    font-weight: 800;
+    color: #000;
     margin: 40px 0 20px;
-    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.02em;
 }
 
 .game-instructions {
     text-align: center;
     max-width: 600px;
-    margin: 30px auto;
+    margin: 40px auto;
     color: #666;
+    padding: 24px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
 
 .game-instructions h2 {
     font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #1a1a1a;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #000;
 }
 
 .game-instructions p {
@@ -171,6 +176,7 @@ body {
     margin: 30px auto;
     font-size: 14px;
     font-weight: 500;
+    opacity: 0.8;
 }
 
 /* Add these new styles */
@@ -182,12 +188,14 @@ body {
 }
 
 .utensil {
-    font-size: 72px;
+    font-size: 84px;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+    transition: all 0.3s ease;
 }
 
 #end-screen {
     text-align: center;
-    padding: 40px;
+    padding: 48px;
     width: 100%;
 }
 
@@ -196,5 +204,8 @@ body {
     font-weight: 600;
     margin-bottom: 40px;
     line-height: 1.3;
-    color: #1a1a1a;
+    color: #000;
+    padding: 24px;
+    background: #f5f5f7;
+    border-radius: 16px;
 } 
