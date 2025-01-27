@@ -217,90 +217,113 @@ body {
 /* Add these responsive styles */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
-    }
-
-    .game-container {
-        padding: 20px;
-        margin: 10px auto;
-    }
-
-    #game-ui {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .game-title {
-        font-size: 42px;
-        margin: 20px 0;
-    }
-
-    .stick-figure {
-        font-size: 48px;
-    }
-
-    .utensil {
-        font-size: 64px;
-    }
-
-    .gold-container {
-        width: 160px;
-        min-height: 60px;
-        margin: 10px 0;
-    }
-
-    .gold-piece {
-        font-size: 28px;
-    }
-
-    .primary-button {
-        min-width: 120px;
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-
-    .game-instructions {
-        margin: 20px auto;
-        padding: 16px;
-    }
-
-    .game-instructions h2 {
-        font-size: 20px;
-    }
-
-    .game-instructions p {
-        font-size: 14px;
-    }
-
-    /* Prevent scrolling when not needed */
-    html, body {
-        height: 100%;
-        overflow-x: hidden;
-    }
-
-    /* Fix button touch targets */
-    .button-container {
-        gap: 12px;
-    }
-
-    .primary-button {
-        touch-action: manipulation;
-    }
-}
-
-/* Add styles for even smaller screens */
-@media (max-width: 380px) {
-    .game-title {
-        font-size: 36px;
+        padding: 5px;
     }
 
     .game-container {
         padding: 15px;
+        margin: 5px auto;
+        border-radius: 16px;
+    }
+
+    #game-ui {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .game-title {
+        font-size: 32px;
+        margin: 10px 0;
+    }
+
+    .stick-figure {
+        font-size: 36px;
+    }
+
+    .utensil {
+        font-size: 48px;
+        margin: 10px 0;
+    }
+
+    .gold-container {
+        width: 120px;
+        min-height: 40px;
+        margin: 5px 0;
+    }
+
+    .gold-piece {
+        font-size: 24px;
+    }
+
+    .label {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .controls {
+        margin: 10px 0;
     }
 
     .primary-button {
         min-width: 100px;
         padding: 10px 16px;
         font-size: 14px;
+    }
+
+    #message {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #message:not(:empty) {
+        padding: 8px 16px;
+    }
+
+    .game-instructions {
+        margin: 15px auto;
+        padding: 12px;
+    }
+
+    .game-instructions h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .game-instructions p {
+        font-size: 13px;
+    }
+
+    .credit {
+        margin: 15px auto;
+        font-size: 12px;
+    }
+}
+
+/* Even smaller screens */
+@media (max-width: 380px) {
+    .game-title {
+        font-size: 28px;
+    }
+
+    .game-container {
+        padding: 10px;
+    }
+
+    .primary-button {
+        min-width: 90px;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .stick-figure {
+        font-size: 32px;
+    }
+
+    .utensil {
+        font-size: 42px;
+    }
+
+    .gold-piece {
+        font-size: 20px;
     }
 } 
